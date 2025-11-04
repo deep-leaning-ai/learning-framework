@@ -1,0 +1,63 @@
+[project]
+name = "learning-framework"
+version = "0.1.0"
+description = "Educational AI Learning Framework with unified interface for multiple frameworks"
+authors = [{name = "AI Learning Team"}]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy>=1.21.0",
+    "pandas>=1.3.0",
+    "pydantic>=2.0.0",
+    "pyyaml>=6.0",
+    "scikit-learn>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-mock>=3.10.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.0.0",
+]
+keras = [
+    "tensorflow>=2.10.0",
+]
+pytorch = [
+    "torch>=1.13.0",
+    "pytorch-lightning>=2.0.0",
+]
+huggingface = [
+    "transformers>=4.25.0",
+    "datasets>=2.8.0",
+]
+tracking = [
+    "mlflow>=2.0.0",
+    "wandb>=0.13.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --cov=. --cov-report=term-missing"
+asyncio_mode = "auto"
+
+[tool.black]
+line-length = 88
+target-version = ["py38"]
+include = '\.pyi?$'
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
