@@ -9,9 +9,9 @@ import numpy as np
 from typing import Dict, Any, Optional, Tuple
 from pathlib import Path
 
-from core.contracts import ModelPort, DataPort, MetricsPort
-from core.models import ModelConfig, TrainingConfig, ExperimentResult
-from utils.metrics import MetricsCalculator
+from learning_framework.core.contracts import ModelPort, DataPort, MetricsPort
+from learning_framework.core.models import ModelConfig, TrainingConfig, ExperimentResult
+from learning_framework.utils.metrics import MetricsCalculator
 
 
 class ExperimentService:
@@ -260,7 +260,7 @@ class ExperimentService:
         all_metrics = {**train_metrics, **eval_metrics}
 
         # DatasetInfo 생성
-        from core.models import DatasetInfo
+        from learning_framework.core.models import DatasetInfo
         dataset_info = DatasetInfo(
             name=data_path,
             train_size=len(data["X_train"]),

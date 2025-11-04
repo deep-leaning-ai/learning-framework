@@ -2,7 +2,7 @@
 Configuration management module
 """
 
-from config.schema import (
+from .schema import (
     ExperimentConfig,
     ModelConfigSchema,
     TrainingConfigSchema,
@@ -15,7 +15,7 @@ from config.schema import (
     OptimizerType,
     SchedulerType,
 )
-from config.loader import YAMLConfigLoader
+from .loader import YAMLConfigLoader
 
 __all__ = [
     "ExperimentConfig",

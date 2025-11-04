@@ -4,7 +4,7 @@ All tests follow Given-When-Then pattern.
 """
 
 import pytest
-from utils.exceptions import (
+from learning_framework.utils.exceptions import (
     AIFrameworkException,
     ErrorSeverity,
     ConfigException,

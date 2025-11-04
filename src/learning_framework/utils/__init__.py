@@ -2,7 +2,7 @@
 Utility functions and helpers
 """
 
-from utils.exceptions import (
+from .exceptions import (
     AIFrameworkException,
     ConfigException,
     ConfigValidationException,
@@ -19,7 +19,7 @@ from utils.exceptions import (
     MemoryException,
     ErrorSeverity,
 )
-from utils.metrics import MetricsCalculator
+from .metrics import MetricsCalculator
 
 __all__ = [
     "AIFrameworkException",

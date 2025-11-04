@@ -5,7 +5,7 @@ All tests follow Given-When-Then pattern.
 
 import pytest
 from pydantic import ValidationError
-from config.schema import (
+from learning_framework.config.schema import (
     ExperimentConfig,
     ModelConfigSchema,
     TrainingConfigSchema,

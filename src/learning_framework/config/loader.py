@@ -10,8 +10,8 @@ from pathlib import Path
 from typing import Dict, Any
 from pydantic import ValidationError
 
-from config.schema import FullConfigSchema
-from utils.exceptions import ConfigException
+from learning_framework.config.schema import FullConfigSchema
+from learning_framework.utils.exceptions import ConfigException
 
 
 class YAMLConfigLoader:

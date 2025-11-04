@@ -7,7 +7,7 @@ machine learning models across different frameworks (TensorFlow, PyTorch, etc.).
 
 __version__ = "0.1.0"
 
-from core.models import (
+from .core.models import (
     ModelConfig,
     TrainingConfig,
     DatasetInfo,
@@ -15,20 +15,20 @@ from core.models import (
     ModelType,
     OptimizerType,
 )
-from core.contracts import ModelPort, DataPort, MetricsPort
+from .core.contracts import ModelPort, DataPort, MetricsPort
 
-from services.experiment_service import ExperimentService
+from .services.experiment_service import ExperimentService
 
-from config.schema import ExperimentConfig, FrameworkType, TaskType
-from config.loader import YAMLConfigLoader
+from .config.schema import ExperimentConfig, FrameworkType, TaskType
+from .config.loader import YAMLConfigLoader
 
-from utils.exceptions import (
+from .utils.exceptions import (
     AIFrameworkException,
     ConfigException,
     ModelException,
     DataException,
 )
-from utils.metrics import MetricsCalculator
+from .utils.metrics import MetricsCalculator
 
 __all__ = [
     "__version__",

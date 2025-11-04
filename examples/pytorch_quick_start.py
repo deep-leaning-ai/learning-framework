@@ -5,8 +5,8 @@ PyTorch Adapter Quick Start
 """
 
 import numpy as np
-from adapters.frameworks import PyTorchModelAdapter
-from core.models import ModelConfig, TrainingConfig, ModelType, OptimizerType
+from learning_framework.adapters.frameworks import PyTorchModelAdapter
+from learning_framework.core.models import ModelConfig, TrainingConfig, ModelType, OptimizerType
 
 
 def quick_classification_example():

@@ -9,8 +9,8 @@ from sklearn.datasets import load_digits
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 
-from adapters.frameworks import PyTorchModelAdapter
-from core.models import ModelConfig, TrainingConfig, ModelType, OptimizerType
+from learning_framework.adapters.frameworks import PyTorchModelAdapter
+from learning_framework.core.models import ModelConfig, TrainingConfig, ModelType, OptimizerType
 
 
 def create_classification_model():

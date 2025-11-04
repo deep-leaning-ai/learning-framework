@@ -6,14 +6,14 @@ All tests follow Given-When-Then pattern.
 import pytest
 import numpy as np
 from typing import Dict, Any, Optional, Tuple
-from core.contracts import (
+from learning_framework.core.contracts import (
     ModelPort,
     DataPort,
     TrackingPort,
     MetricsPort,
     ConfigPort,
 )
-from core.models import ModelConfig, TrainingConfig, ModelType, OptimizerType
+from learning_framework.core.models import ModelConfig, TrainingConfig, ModelType, OptimizerType
 
 
 class TestModelPort:

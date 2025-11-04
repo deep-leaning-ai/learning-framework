@@ -10,9 +10,9 @@ import numpy as np
 from typing import Dict, Any, Optional, Tuple
 from pathlib import Path
 
-from core.models import ModelConfig, TrainingConfig
-from core.contracts import ModelPort, DataPort
-from utils.exceptions import ModelException, DataException
+from learning_framework.core.models import ModelConfig, TrainingConfig
+from learning_framework.core.contracts import ModelPort, DataPort
+from learning_framework.utils.exceptions import ModelException, DataException
 
 
 class MockModelAdapter:

@@ -4,7 +4,7 @@ Core module - Contains core business logic and port interfaces
 
 __version__ = "0.1.0"
 
-from core.models import (
+from .models import (
     ModelConfig,
     TrainingConfig,
     DatasetInfo,
@@ -14,7 +14,7 @@ from core.models import (
     OptimizerType,
 )
 
-from core.contracts import (
+from .contracts import (
     ModelPort,
     DataPort,
     MetricsPort,

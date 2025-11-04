@@ -8,7 +8,7 @@ and testability through duck typing.
 
 from typing import Protocol, Dict, Any, Optional, Tuple, List
 import numpy as np
-from core.models import ModelConfig, TrainingConfig, ExperimentResult
+from learning_framework.core.models import ModelConfig, TrainingConfig, ExperimentResult
 
 
 class ModelPort(Protocol):

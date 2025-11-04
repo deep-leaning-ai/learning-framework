@@ -9,9 +9,9 @@ import tempfile
 from pathlib import Path
 from typing import Dict, Any
 
-from adapters.frameworks.keras_adapter import KerasModelAdapter
-from core.models import ModelConfig, TrainingConfig, ModelType, OptimizerType
-from core.exceptions import ModelException, DataException
+from learning_framework.adapters.frameworks.keras_adapter import KerasModelAdapter
+from learning_framework.core.models import ModelConfig, TrainingConfig, ModelType, OptimizerType
+from learning_framework.core.exceptions import ModelException, DataException
 
 
 class TestKerasAdapterInitialization:

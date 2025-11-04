@@ -8,10 +8,10 @@ import tempfile
 from pathlib import Path
 from typing import Dict, Any
 
-from services.experiment_service import ExperimentService
-from adapters.mock_adapter import MockModelAdapter, MockDataAdapter
-from utils.metrics import MetricsCalculator
-from core.models import ModelConfig, TrainingConfig, ModelType, OptimizerType, ExperimentResult
+from learning_framework.services.experiment_service import ExperimentService
+from learning_framework.adapters.mock_adapter import MockModelAdapter, MockDataAdapter
+from learning_framework.utils.metrics import MetricsCalculator
+from learning_framework.core.models import ModelConfig, TrainingConfig, ModelType, OptimizerType, ExperimentResult
 
 
 class TestExperimentServiceInitialization:

@@ -7,7 +7,7 @@ import pytest
 import numpy as np
 from typing import Dict
 
-from utils.metrics import MetricsCalculator
+from learning_framework.utils.metrics import MetricsCalculator
 
 
 class TestMetricsCalculatorAccuracy:

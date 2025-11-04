@@ -16,7 +16,7 @@ Usage:
     X_train, X_val, X_test, y_train, y_val, y_test = loader.split(X, y)
 """
 
-from adapters.loaders.file_data_loader import FileDataLoader
+from .loaders.file_data_loader import FileDataLoader
 
 __all__ = [
     "FileDataLoader",

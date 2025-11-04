@@ -11,8 +11,8 @@ from pathlib import Path
 from sklearn.preprocessing import MinMaxScaler, StandardScaler
 from sklearn.model_selection import train_test_split
 
-from core.contracts import DataPort
-from utils.exceptions import DataException
+from learning_framework.core.contracts import DataPort
+from learning_framework.utils.exceptions import DataException
 
 
 class FileDataLoader:

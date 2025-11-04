@@ -7,8 +7,8 @@ Convolutional Neural Network 예제
 import numpy as np
 from sklearn.model_selection import train_test_split
 
-from adapters.frameworks import PyTorchModelAdapter
-from core.models import ModelConfig, TrainingConfig, ModelType, OptimizerType
+from learning_framework.adapters.frameworks import PyTorchModelAdapter
+from learning_framework.core.models import ModelConfig, TrainingConfig, ModelType, OptimizerType
 
 
 def generate_image_data(n_samples=1000, img_size=28, n_classes=10):

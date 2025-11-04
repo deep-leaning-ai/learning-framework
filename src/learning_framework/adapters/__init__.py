@@ -13,7 +13,7 @@ Note: Framework adapters should be imported directly to avoid loading heavy depe
     Example: from learning_framework.adapters.loaders import FileDataLoader
 """
 
-from adapters.mock_adapter import MockModelAdapter, MockDataAdapter
+from .mock_adapter import MockModelAdapter, MockDataAdapter
 
 __all__ = [
     "MockModelAdapter",

@@ -7,8 +7,8 @@ import pytest
 import numpy as np
 from typing import Dict, Any
 
-from adapters.mock_adapter import MockModelAdapter, MockDataAdapter
-from core.models import ModelConfig, TrainingConfig, ModelType, OptimizerType
+from learning_framework.adapters.mock_adapter import MockModelAdapter, MockDataAdapter
+from learning_framework.core.models import ModelConfig, TrainingConfig, ModelType, OptimizerType
 
 
 class TestMockModelAdapter:

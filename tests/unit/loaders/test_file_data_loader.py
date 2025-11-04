@@ -9,8 +9,8 @@ import pandas as pd
 import tempfile
 from pathlib import Path
 
-from adapters.loaders.file_data_loader import FileDataLoader
-from utils.exceptions import DataException
+from learning_framework.adapters.loaders.file_data_loader import FileDataLoader
+from learning_framework.utils.exceptions import DataException
 
 
 class TestFileDataLoaderInitialization:

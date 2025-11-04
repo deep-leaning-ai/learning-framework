@@ -18,9 +18,9 @@ except ImportError:
         "Install with: pip install tensorflow"
     )
 
-from core.contracts import ModelPort
-from core.models import ModelConfig, TrainingConfig, ModelType, OptimizerType
-from core.exceptions import ModelException, DataException
+from learning_framework.core.contracts import ModelPort
+from learning_framework.core.models import ModelConfig, TrainingConfig, ModelType, OptimizerType
+from learning_framework.core.exceptions import ModelException, DataException
 
 
 class KerasModelAdapter:

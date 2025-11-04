@@ -20,8 +20,8 @@ Usage:
 Note: Import adapters directly to avoid loading heavy framework dependencies
 """
 
-from adapters.frameworks.keras_adapter import KerasModelAdapter
-from adapters.frameworks.pytorch_adapter import PyTorchModelAdapter
+from .keras_adapter import KerasModelAdapter
+from .pytorch_adapter import PyTorchModelAdapter
 
 __all__ = [
     "KerasModelAdapter",

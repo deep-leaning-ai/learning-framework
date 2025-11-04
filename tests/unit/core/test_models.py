@@ -5,7 +5,7 @@ All tests follow Given-When-Then pattern.
 
 import pytest
 from datetime import datetime
-from core.models import (
+from learning_framework.core.models import (
     ModelConfig,
     TrainingConfig,
     DatasetInfo,
